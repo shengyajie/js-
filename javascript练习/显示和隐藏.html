@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>显示和隐藏</title>
+<script type="text/javascript">
+   function hidetext()
+    {
+	var mye=document.getElementById("con").style.display="none";
+	}
+  function showtext()
+	{
+	var mye=document.getElementById("con").style.display="block";
+	}
+</script>
+</head>
+<body>
+ <h1 id="con">javascript</h1>
+<p >对HTML元素进行操作，可添加、改变或移除CSS样式等</p>
+<form>
+<input type="button" onclick="hidetext()" value="隐藏内容"/>
+<input type ="button" onclick="showtext()" value="显示内容"/>
+</form>
+</body>
+</html>

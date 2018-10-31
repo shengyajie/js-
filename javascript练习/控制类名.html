@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>className属性</title>
+<script type="text/css">
+     input{
+	   font-size:10px;
+	   }
+    .one{
+		   width:200px;
+		   background-color:#CCC;}
+    .two{
+		font-size:18px;
+		color:#F00;}
+</script>
+</head>
+<body>
+ <p id="con" class="one">javascript</p>
+<form>
+<input type="button" value="点击更改" onclick="modifyclass()" />
+</form>
+<script type="text/javascript">
+var mye=document.getElementById('con');
+document.write("p元素Class值为："+mye.className+"<br>");
+function modifyclass(){
+	mye.className="two";
+	}
+</script>
+</body>
+</html>

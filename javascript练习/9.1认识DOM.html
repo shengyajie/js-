@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>style样式</title>
+</head>
+<body>
+<h2 id="con">I love JavaScript</H2>
+<p> JavaScript使网页显示动态效果并实现与用户交互功能。</p>
+<script type="text/javascript">
+var syj=document.getElementById("con()");
+syj.style.color="red";
+syj.style.backgroundColor="#CCC";
+
+function ss() {
+    syj.style.display="none";
+}
+function v() {
+    syj.style.display="block";
+}
+
+
+
+
+</script>
+
+
+    <input type="button" name="xianshi" value="xianshi" onclick="v()"/>
+
+    <input type="button" name="yin" value="yin" onclick="ss()"/>
+
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>浏览器对象</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=gkb"/>
+</head>
+<body>
+<!--先编写好网页布局-->
+<p>操作中</p>
+<p><span id="myid">5</span>秒后回到主页</p>
+<a href="www.imooc.com">返回 </a>
+
+
+<script type="text/javascript">
+    var n=5,t;
+    function begin(){
+
+        document.getElementById("myid").innerHTML=n;
+        n--;
+        if (n==0){
+
+            clearTimeout(t);
+            window.history.go(-1);
+        }
+
+        t=setTimeout("begin()",1000);
+    }
+    //获取显示秒数的元素，通过定时器来更改秒数。
+
+    //通过window的location和history对象来控制网页的跳转。
+    begin();
+</script>
+</body>
+</html>
